@@ -6,6 +6,8 @@
 
 - #### 🚧 Query tool available soon
 
+#### [Npm Package Link](https://www.npmjs.com/package/@jodd/snap)
+
 ### Create a store
 
 ```tsx
