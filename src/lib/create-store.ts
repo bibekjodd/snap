@@ -44,7 +44,11 @@ export function createStore<State>(creator: Creator<State>): Store<State> {
   const useStore = <SelectorOutput = State>(
     selector: Selector<State, SelectorOutput> = (state) => state as unknown as SelectorOutput
   ): SelectorOutput => {
-    return useSyncExternalStore(subscribe, () => selector(state));
+    return useSyncExternalStore(
+      subscribe,
+      () => selector(state),
+      () => selector(store.getInitialState())
+    );
   };
   const storeApi: StoreApi<State> = { getInitialState: () => initialState, getState, setState };
   const store: Store<State> = Object.assign(useStore, storeApi);

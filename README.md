@@ -1,12 +1,14 @@
-## Snap
+# Snap
 
-#### State manager & query tool for react apps
+State manager & query tool for react apps
 
-#### Info
+## Info
 
 - #### 🚧 Query tool available soon
 
-#### [Npm Package Link](https://www.npmjs.com/package/@jodd/snap)
+[Npm Package Link](https://www.npmjs.com/package/@jodd/snap)
+
+## Usage
 
 ### Create a store
 
@@ -103,3 +105,8 @@ function Component() {
   );
 }
 ```
+
+## Credits
+
+- Inspired by [Zustand](https://github.com/pmndrs/zustand) for client state management
+- Inspired by [Tanstack Query](https://github.com/TanStack/query) for server state management

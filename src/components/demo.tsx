@@ -1,6 +1,7 @@
+'use client';
+import { useShallow } from '@/lib';
+import { usePlayerStore } from '@/store/use-player';
 import { Fragment, useEffect, useRef } from 'react';
-import { usePlayerStore } from './hooks/player';
-import { useShallow } from './store';
 
 export default function Demo() {
   const rerenderCountRef = useRef(0);

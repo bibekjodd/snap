@@ -1,4 +1,4 @@
-import { createStore } from '../store';
+import { createStore } from '@/lib';
 
 type State = {
   name: string;
