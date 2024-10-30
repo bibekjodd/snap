@@ -1,6 +1,7 @@
 'use client';
-import { useShallow } from '@/lib';
+
 import { usePlayerStore } from '@/store/use-player';
+import { useShallow } from '@jodd/snap';
 import { Fragment, useEffect, useRef } from 'react';
 
 export default function Demo() {

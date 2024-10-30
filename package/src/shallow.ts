@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 
+// eslint-disable-next-line @typescript-eslint/no-wrapper-object-types
 export const useShallow = <State, SelectorOutput extends Object>(
   selector: (state: State) => Readonly<SelectorOutput>
 ): ((state: State) => Readonly<SelectorOutput>) => {
